@@ -1,5 +1,7 @@
+/*CSS  Header*/
 *{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 
 }
@@ -8,13 +10,15 @@ background-color: black;
 text-align: center;
 color: white;
 display: grid;
-grid-template-columns: 150px 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 border-radius: 0 0 20px 20px;
 justify-content: center;
-justify-items: end;
+justify-items: center;
+align-items: center;
 }
 .header-img-container{
 height: 70px;
+display: inline-block;
 }
 
 #idheader-figure-img{
