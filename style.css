@@ -5,23 +5,128 @@
     box-sizing: border-box;
 
 }
-#hxh-id-header{
-background-color: black;
-text-align: center;
-color: white;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-border-radius: 0 0 20px 20px;
-justify-content: center;
-justify-items: center;
-align-items: center;
-}
-.header-img-container{
-height: 70px;
-display: inline-block;
+#hxh-id-header {
+    background-color: #191919;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Cambiado a columna para dispositivos móviles */
+    align-items: center;
+    min-width: 300px; /* Reducido el ancho mínimo para dispositivos móviles */
+    max-width: 2500px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000; /* Asegura que el encabezado se superponga correctamente */
+    border-radius: 0 0 25px 25px;
+    padding: 10px; /* Agregado para espacio entre el borde y el contenido */
 }
 
-#idheader-figure-img{
-    border-radius: 600px;
+.header-img-container {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Cambiado a centrar para dispositivos móviles */
+    margin: 0 50px; /* Cambiado a 0 50px para dispositivos móviles */
+}
+
+.incio-button-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Cambiado a centrar para dispositivos móviles */
+    margin: 0 50px; /* Cambiado a 0 50px para dispositivos móviles */
+}
+
+.incio-button-header:hover {
+    color: green;
+}
+
+#idheader-figure-img {
+    border-radius: 50%; /* Cambiado a 50% para obtener un círculo perfecto */
     height: 50px;
+}
+
+/*Main first div*/
+#id-first-container {
+    background-image: url('./source/hunter\ x\ hunter\ wallpaper\ pc\ \(1\).jpg');
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
+    background-size: cover; /* Utilizamos cover para que la imagen de fondo se ajuste al contenedor */
+    display: grid;
+    grid-template-rows: 200px 400px;
+}
+.first-div-container-h2 {
+    color: white;
+    position: static; /* Cambiado a relativo para ajustar el margen correctamente */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right:250px; /* Cambiado a auto para centrar el elemento horizontalmente */
+    padding: 10px;
+    font-family: "Jaro", sans-serif;
+    font-size: 2.5rem; /* Ajustamos el tamaño de fuente utilizando rem */
+    font-weight: 200; /* No es necesario especificar unidades para el peso */
+}
+
+.first-div-container-h1 {
+    color: white;
+    position: static; /* Cambiado a relativo para ajustar el margen correctamente */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 5rem; /* Ajustamos el tamaño de fuente utilizando rem */
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500; /* No es necesario especificar unidades para el peso */
+}
+
+/* Regla de medios para dispositivos móviles */
+@media (max-width: 767px) {
+    #id-first-container #hxh-id-header{
+        background-image: url("./source/hunter\ x\ hunter\ wallpaper\ pc\ \(1\).jpg");
+        background-size: cover;
+
+    }
+    #hxh-id-header{
+        flex-direction: row; /* Cambiado a fila para dispositivos móviles */
+        justify-content: space-between; /* Alineación horizontal para dispositivos móviles */
+        align-items: center;
+        border-radius: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        position: static;
+        width: auto;
+        height: auto;
+        justify-items: center;
+
+    }
+    .incio-button-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-img-container {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Cambiado a centrar para dispositivos móviles */
+    }
+    
+    #idheader-figure-img {
+        height: 40px; /* Reducido el tamaño de la imagen para dispositivos móviles */
+    }
+
+    #id-first-container {
+        min-height: 200px; /* Ajustamos la altura mínima para dispositivos móviles */
+        grid-template-rows: 100px 200px; /* Ajustamos las filas para dispositivos móviles */
+        background-size: cover;
+        width: auto;
+    }
+    .first-div-container-h2 {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    .first-div-container-h1{
+       font-size: 2.5rem;
+    }
+    
 }
