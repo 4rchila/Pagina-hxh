@@ -78,6 +78,38 @@
     font-family: "Orbitron", sans-serif;
     font-weight: 500; /* No es necesario especificar unidades para el peso */
 }
+/* Main second div */
+#second-div-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para el texto y la imagne */
+    grid-template-columns: 50% 50%;
+    gap: 5px; /* Espacio entre las dos columnas */
+    background-color: #191919;
+}
+.third-div-container-h2 {
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+#second-div-content p {
+    grid-column: 1; /* Asignar el parrafo a la primera columna */
+    align-items: center; /* Se centra el texto verticalmente */
+    color: white;
+    text-align: center;
+    padding: 40px; /* Padding para el texto */
+    margin: 0 40px; /* Margenes para el texto */
+    justify-content: center;
+}
+
+#second-div-content img {
+    grid-column: 2;
+    align-items: center; /* Se centra la verticalmente */
+    padding: 40px; /* Padding para la imagen */
+    margin: 0 50px; /* Margenes para la imagen */
+    border-radius: 60px; /* Redondear la imagen*/
+    height: 350px;
+}
 
 /* Regla de medios para dispositivos móviles */
 @media (max-width: 767px) {
