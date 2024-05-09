@@ -78,8 +78,8 @@
     font-family: "Orbitron", sans-serif;
     font-weight: 500; /* No es necesario especificar unidades para el peso */
 }
-/* Main second div */
-#second-div-content {
+/* Main third div */
+#third-div-content {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas para el texto y la imagne */
     grid-template-columns: 50% 50%;
@@ -92,7 +92,7 @@
     justify-content: center;
     padding: 5px;
 }
-#second-div-content p {
+#third-div-content p {
     grid-column: 1; /* Asignar el parrafo a la primera columna */
     align-items: center; /* Se centra el texto verticalmente */
     color: white;
@@ -102,13 +102,12 @@
     justify-content: center;
 }
 
-#second-div-content img {
+#third-div-content img {
     grid-column: 2;
     align-items: center; /* Se centra la verticalmente */
-    padding: 40px; /* Padding para la imagen */
-    margin: 0 50px; /* Margenes para la imagen */
     border-radius: 60px; /* Redondear la imagen*/
-    height: 350px;
+    aspect-ratio: 16/9;
+    max-width: 90%;    
 }
 
 /* Regla de medios para dispositivos móviles */
@@ -162,6 +161,26 @@
        font-size: 2.5rem;
     }
     
+    /* Parte responsive div No.3 */
+    #third-div-content {
+        grid-template-columns: 1fr;
+        min-height: 200px; /* Ajustamos la altura mínima para dispositivos móviles */
+        background-size: cover;
+        width: auto;
+    }
+
+    #third-div-content p {
+        padding: 20px;
+        margin: 10px;
+        height: auto;
+        background-size: cover;
+    }
+    #third-div-content img {
+        padding: 10px;
+        margin: 5px;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
