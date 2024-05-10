@@ -133,6 +133,7 @@
     text-align: center;
     justify-content: center;
     padding: 5px;
+    font-family: "Oswald", sans-serif;
 }
 #third-div-content p {
     grid-column: 1; /* Asignar el parrafo a la primera columna */
@@ -142,6 +143,7 @@
     padding: 40px; /* Padding para el texto */
     margin: 0 40px; /* Margenes para el texto */
     justify-content: center;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 #third-div-content img {

@@ -1,1 +1,3 @@
 # Pagina-hxh
+![Imagen sobre la serie HunterXHunter](https://imgsrv.crunchyroll.com/cdn-cgi/image/format=auto,fit=contain,width=1200,height=675,quality=85/catalog/crunchyroll/2e54344c7cc1675af721b4021222230f.jpe)
+Este proyecto está destinado a dar contexto sobre la serie japonesa titulada "HunterXHunter". Gracias a la página web que contiene el proyecto cualquiera podrá conocer la sinopsis de la serie y, quién sabe, hasta podría animar a alguno a empezar a ver esta gran serie.
