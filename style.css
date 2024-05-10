@@ -223,6 +223,13 @@
         align-items: center;
         width: auto;
     }
+    #idcontent-img-container2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
     #second-div-content h2{
         grid-row: 1;
         padding: 1px;
