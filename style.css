@@ -78,6 +78,48 @@
     font-family: "Orbitron", sans-serif;
     font-weight: 500; /* No es necesario especificar unidades para el peso */
 }
+
+/* Main second div */
+#second-div-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas para el texto y la imagne */
+    grid-template-columns: 50% 50%;
+    gap: 0px; /* Espacio entre las dos columnas */
+    background-color: lightgray;
+}
+.second-div-container-h2 {
+    grid-column: 2;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: "Freeman", sans-serif;
+}
+
+#second-div-content p {
+    grid-column: 2; /* Asignar el parrafo a la primera columna */
+    align-items: center; /* Centrado vertical del texto */
+    color: white; /*Color del texto*/
+    text-align: center;
+    padding: 20px; /* Padding para el texto */
+    margin: 100px 50px; /* Margenes para el texto */
+    justify-content: center;
+    font-family: "Sedan SC", serif
+}
+
+#second-div-content figure{
+    grid-column: 1;
+    grid-row: 2;
+    align-items: center; /* Se centra la verticalmente */
+}
+#second-div-content img{
+    margin: 0 70px;
+    align-items: center; /* Se centra la verticalmente */
+    border-radius: 60px; /* Redondear la imagen*/
+    aspect-ratio: 16/9;
+    max-width: 100%;
+}
+
 /* Main third div */
 #third-div-content {
     display: grid;
@@ -161,6 +203,37 @@
        font-size: 2.5rem;
     }
     
+     /* Parte responsive div No.2 */
+     #second-div-content {
+        grid-template-columns: 0;
+        grid-template-rows: auto auto 1fr;
+        min-height: 100px; /* Ajustamos la altura mínima para dispositivos móviles */
+        background-size: cover;
+        width: auto;
+    }
+    #second-div-content figure {
+        grid-column: 2;
+        grid-row: 3;
+        padding: 20px;
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+        width: auto;
+    }
+    #second-div-content h2{
+        grid-row: 1;
+        padding: 1px;
+    }
+    #second-div-content p {
+        grid-row: 2;
+        padding: 20px;
+        margin: 10px;
+        height: auto;
+        background-size: cover;
+    }
+    
+
     /* Parte responsive div No.3 */
     #third-div-content {
         grid-template-columns: 1fr;
