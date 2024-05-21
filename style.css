@@ -223,6 +223,15 @@
         align-items: center;
         width: auto;
     }
+
+    #second-div-content img{
+        align-items: center; /* Se centra la verticalmente */
+        border-radius: 60px; /* Redondear la imagen*/
+        aspect-ratio: 16/9;
+        max-width: 100%;
+    }
+
+    
     #second-div-content h2{
         grid-row: 1;
         padding: 1px;
@@ -234,7 +243,6 @@
         height: auto;
         background-size: cover;
     }
-    
 
     /* Parte responsive div No.3 */
     #third-div-content {
