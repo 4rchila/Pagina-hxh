@@ -225,6 +225,7 @@
     }
 
     #second-div-content img{
+        margin: 0;
         align-items: center; /* Se centra la verticalmente */
         border-radius: 60px; /* Redondear la imagen*/
         aspect-ratio: 16/9;
